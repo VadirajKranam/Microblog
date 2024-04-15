@@ -9,5 +9,5 @@ htmlcov/
 .tox/
 docs/_build/
 logs
-.db
+app.db
 .env

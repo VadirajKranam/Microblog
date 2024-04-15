@@ -11,3 +11,4 @@ docs/_build/
 logs
 app.db
 *.env
+.flaskenv

@@ -1,0 +1,125 @@
+2024-04-13 23:20:32,469 ERROR: Exception on /auth/login [GET] [in D:\microblog\venv\lib\site-packages\flask\app.py:828]
+Traceback (most recent call last):
+  File "D:\microblog\venv\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\microblog\venv\lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\microblog\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\microblog\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\microblog\app\auth\routes.py", line 49, in login
+    return render_template('auth/login.html',title='Sign in',form=form)
+  File "D:\microblog\venv\lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "D:\microblog\venv\lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "D:\microblog\venv\lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "D:\microblog\venv\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "D:\microblog\app\templates\auth\login.html", line 1, in top-level template code
+    {% extends 'base.html' %} {% import "bootstrap_wtf.html" as wtf %} {% block
+  File "D:\microblog\app\templates\base.html", line 21, in top-level template code
+    <a class="navbar-brand" href="{{ url_for('index') }}">Microblog</a>
+  File "D:\microblog\venv\lib\site-packages\flask\app.py", line 1074, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "D:\microblog\venv\lib\site-packages\flask\app.py", line 1063, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "D:\microblog\venv\lib\site-packages\werkzeug\routing\map.py", line 919, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'index'. Did you mean 'auth.index' instead?
+2024-04-13 23:20:53,050 INFO: Microblog startup [in D:\microblog\app\__init__.py:65]
+2024-04-13 23:21:01,310 ERROR: Exception on /auth/login [GET] [in D:\microblog\venv\lib\site-packages\flask\app.py:828]
+Traceback (most recent call last):
+  File "D:\microblog\venv\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\microblog\venv\lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\microblog\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\microblog\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\microblog\app\auth\routes.py", line 49, in login
+    return render_template('auth/login.html',title='Sign in',form=form)
+  File "D:\microblog\venv\lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "D:\microblog\venv\lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "D:\microblog\venv\lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "D:\microblog\venv\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "D:\microblog\app\templates\auth\login.html", line 1, in top-level template code
+    {% extends 'base.html' %} {% import "bootstrap_wtf.html" as wtf %} {% block
+  File "D:\microblog\app\templates\base.html", line 21, in top-level template code
+    <a class="navbar-brand" href="{{ url_for('index') }}">Microblog</a>
+  File "D:\microblog\venv\lib\site-packages\flask\app.py", line 1074, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "D:\microblog\venv\lib\site-packages\flask\app.py", line 1063, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "D:\microblog\venv\lib\site-packages\werkzeug\routing\map.py", line 919, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'index'. Did you mean 'auth.index' instead?
+2024-04-13 23:22:44,932 INFO: Microblog startup [in D:\microblog\app\__init__.py:65]
+2024-04-13 23:22:46,878 ERROR: Exception on /auth/login [GET] [in D:\microblog\venv\lib\site-packages\flask\app.py:828]
+Traceback (most recent call last):
+  File "D:\microblog\venv\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\microblog\venv\lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\microblog\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\microblog\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\microblog\app\auth\routes.py", line 49, in login
+    return render_template('auth/login.html',title='Sign in',form=form)
+  File "D:\microblog\venv\lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "D:\microblog\venv\lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "D:\microblog\venv\lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "D:\microblog\venv\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "D:\microblog\app\templates\auth\login.html", line 1, in top-level template code
+    {% extends 'base.html' %} {% import "bootstrap_wtf.html" as wtf %} {% block
+  File "D:\microblog\app\templates\base.html", line 21, in top-level template code
+    <a class="navbar-brand" href="{{ url_for('index') }}">Microblog</a>
+  File "D:\microblog\venv\lib\site-packages\flask\app.py", line 1074, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "D:\microblog\venv\lib\site-packages\flask\app.py", line 1063, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "D:\microblog\venv\lib\site-packages\werkzeug\routing\map.py", line 919, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'index'. Did you mean 'auth.index' instead?
+2024-04-14 10:50:52,650 INFO: Microblog startup [in D:\microblog\app\__init__.py:69]
+2024-04-14 10:52:48,678 INFO: Microblog startup [in D:\microblog\app\__init__.py:69]
+2024-04-14 10:52:53,229 ERROR: Exception on / [GET] [in D:\microblog\venv\lib\site-packages\flask\app.py:828]
+Traceback (most recent call last):
+  File "D:\microblog\venv\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\microblog\venv\lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\microblog\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\microblog\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\microblog\venv\lib\site-packages\flask_login\utils.py", line 285, in decorated_view
+    return current_app.login_manager.unauthorized()
+  File "D:\microblog\venv\lib\site-packages\flask_login\login_manager.py", line 196, in unauthorized
+    redirect_url = make_login_url(login_view, next_url=request.url)
+  File "D:\microblog\venv\lib\site-packages\flask_login\utils.py", line 120, in login_url
+    base = expand_login_view(login_view)
+  File "D:\microblog\venv\lib\site-packages\flask_login\utils.py", line 97, in expand_login_view
+    return url_for(login_view)
+  File "D:\microblog\venv\lib\site-packages\flask\helpers.py", line 220, in url_for
+    return current_app.url_for(
+  File "D:\microblog\venv\lib\site-packages\flask\app.py", line 1074, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "D:\microblog\venv\lib\site-packages\flask\app.py", line 1063, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "D:\microblog\venv\lib\site-packages\werkzeug\routing\map.py", line 919, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'login'. Did you mean 'auth.login' instead?
+2024-04-14 10:54:44,009 INFO: Microblog startup [in D:\microblog\app\__init__.py:69]

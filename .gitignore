@@ -10,4 +10,4 @@ htmlcov/
 docs/_build/
 logs
 app.db
-.env
+*.env
